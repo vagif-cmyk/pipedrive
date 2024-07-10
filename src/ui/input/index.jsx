@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./input.module.css";
 
-function Input({ type, placeholder }) {
+function Input({ type, placeholder, required }) {
   const [value, setValue] = useState("");
 
   const handleChange = (e) => {
@@ -9,6 +9,7 @@ function Input({ type, placeholder }) {
   };
   return (
     <input
+      required={required}
       className={styles.input}
       type={type}
       placeholder={placeholder}

@@ -1,4 +1,4 @@
-export const data = [
+export const inputs = [
   {
     title: "Client details",
     inputs: [
@@ -36,3 +36,7 @@ export const data = [
     ],
   },
 ];
+
+export const defaultContextData = {
+  name: "Name",
+};

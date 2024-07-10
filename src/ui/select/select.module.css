@@ -50,9 +50,11 @@
     border: 1px solid var(--gray-light-color);
     border-radius: 4px;
     color: var(--black-color);
-    transition:  background-color .3s ease;
+    background-color: #fff;
+    transition: background-color .3s ease;
     cursor: pointer;
 }
+
 .item:hover {
     background-color: rgb(213, 213, 213);
 }
@@ -61,7 +63,7 @@
     width: 16px;
     height: 16px;
     transform: rotate(90deg);
-    transition:  transform .3s ease;
+    transition: transform .3s ease;
 }
 
 .svg.open {

@@ -1,13 +1,18 @@
 import "../src/assets/styles/index.css";
-import Select from "./ui/select/Select";
+import AppContext from "./context/AppContext";
+import Input from "./ui/input";
+import Select from "./ui/select";
+
 function App() {
   return (
-    <>
-    <div className="a">
+    <AppContext>
       <Select name={"details1"} options={[1, 2, 3, 4, 5]} />
       <Select name={"details2"} options={[1, 2, 3, 4, 5]} />
-    </div>
-    </>
+
+      <Input type={"date"} required={true} />
+      <Input type={"text"} required={true} />
+      <Input type={"number"} required={true} />
+    </AppContext>
   );
 }
 
