@@ -1,0 +1,84 @@
+.select {
+    position: relative;
+    width: 200px;
+}
+
+.list {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    top: 110%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+
+.list.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 6px 10px;
+    width: 100%;
+    border: 1px solid var(--gray-light-color);
+    border-radius: 4px;
+    color: var(--black-color);
+    background-color: transparent;
+    transition: border-color .3s ease;
+    cursor: pointer;
+}
+
+.name {
+    background-color: transparent;
+    border: none;
+}
+
+.item {
+    padding: 6px 10px;
+    border: 1px solid var(--gray-light-color);
+    border-radius: 4px;
+    color: var(--black-color);
+    transition:  background-color .3s ease;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+.svg {
+    width: 16px;
+    height: 16px;
+    transform: rotate(90deg);
+    transition:  transform .3s ease;
+}
+
+.svg.open {
+    transform: rotate(180deg);
+}
+
+.svg path {
+    height: 100%;
+    fill: var(--gray-light-color);
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.line {
+    width: 1px;
+    background-color: var(--gray-light-color);
+}
