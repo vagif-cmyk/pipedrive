@@ -3,6 +3,7 @@ import styles from "./serviceLocation.module.css";
 import Wrapper from "../wrapper";
 import Select from "../../ui/select";
 import Input from "../../ui/input";
+import { areaOptions } from "../../data";
 
 const ServiceLocation = ({ title }) => {
   return (
@@ -13,7 +14,7 @@ const ServiceLocation = ({ title }) => {
         <Input placeholder={"State"} type={"text"} />
         <div className={styles.bottom}>
           <Input placeholder={"Zip code"} type={"number"} />
-          <Select name={"Area"} options={[123, 233, 354, 423, 875]} />
+          <Select name={"Area"} options={areaOptions} />
         </div>
       </div>
     </Wrapper>

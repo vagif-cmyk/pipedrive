@@ -1,3 +1,4 @@
+import { jobTypeOptions } from "../../data";
 import Select from "../../ui/select";
 import TextArea from "../../ui/textAria";
 import Wrapper from "../wrapper";
@@ -8,7 +9,7 @@ const JobDetails = ({ title }) => {
     <Wrapper title={title}>
       <div className={styles.container}>
         <div className={styles.selects}>
-          <Select name={"Job type"} options={[1, 2, 3, 4, 5]} />
+          <Select name={"Job type"} options={jobTypeOptions} />
           <Select name={"Job course"} options={[1, 2, 3, 4, 5]} />
         </div>
         <TextArea placeholder={"Job description (optional)"} />
