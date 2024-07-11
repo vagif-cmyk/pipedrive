@@ -1,18 +1,19 @@
 import "../src/assets/styles/index.css";
+import ClientDetails from "./components/clientDetails";
+import JobDetails from "./components/jobDetails";
+import Scheduled from "./components/scheduled";
+import ServiceLocation from "./components/serviceLocation";
 import AppContext from "./context/AppContext";
-import Alarm from "./svg/Alarm";
-import Input from "./ui/input";
-import Select from "./ui/select";
 
 function App() {
   return (
     <AppContext>
-      <Select name={"details1"} options={[1, 2, 3, 4, 5]} />
-      <Select name={"details2"} options={[1, 2, 3, 4, 5]} />
-
-      <Input type={"date"} required={true} />
-      <Input type={"text"} required={true} icon={<Alarm />} />
-      <Input type={"number"} required={true} />
+      <div className="container">
+        <ClientDetails title="Client details" />
+        <JobDetails title="Job details" />
+        <ServiceLocation title="Service location" />
+        <Scheduled title="Scheduled" />
+      </div>
     </AppContext>
   );
 }

@@ -1,0 +1,14 @@
+.area {
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid var(--gray-light-color);
+    border-radius: 4px;
+    color: var(--black-color);
+    resize: none;
+    transition: border-color .3s ease;
+}
+
+.area:hover, .area:focus {
+    outline: none;
+    border-color: var(--blue-color);
+}
